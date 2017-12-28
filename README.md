@@ -5,4 +5,4 @@
 3. bootstrap-datepicker 日期筛选
 4. 构建代码思路
 
-![image](//wx2.sinaimg.cn/large/006OyqbNgy1fmwmouxtxjg31470pzb17.gif)
+![示例图片](https://wx2.sinaimg.cn/large/006OyqbNgy1fmwmouxtxjg31470pzb17.gif "示例图片")
