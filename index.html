@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TITILE</title>
+    <!--MAIN STYLES-->
+    <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/datapicker/datepicker.css">
+    <link rel="stylesheet" href="./lib/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="./lib/jquery-pagination/pagination.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <a href="http://www.lovchun.com" target="_blank">详细说明</a>
+        </h1>
+        <!--START search form-->
+        <form class="m-b-sm form-inline">
+            <div class="form-group input-daterange input-group" id="datepicker">
+                <input type="text" name="begin_date" class="form-control" value="2017-12-27" id="begin-date" placeholder="起始日期">
+                <span class="input-group-addon">至</span>
+                <input type="text" name="end_date" class="form-control" value="2017-12-28" id="end-date" placeholder="截止日期">
+            </div>
+            <div class="form-group m-l-md">
+                <input id="keyword" class="form-control" type="text" name="keyword" value="" placeholder="请输入关键词">
+            </div>
+            <div class="form-group">
+                <select class="form-control" name="follow_type">
+                    <option value="allFollow">全部</option>
+                    <option value="subFollow">关注</option>
+                    <option value="aouthFollow">授权</option>
+                    <option value="unsubFollow">取消关注</option>
+                </select>
+            </div>
+            <button id="search-btn" type="button" class="btn btn-primary">查询</button>
+        </form>
+        <!--END search form-->
+
+        <div id="loading-bar" class="alert alert-info" role="alert">
+            <strong>数据加载中...</strong> 
+        </div>
+
+        <!--START table-->
+        <table id="follow-table" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>头像</th>
+                    <th>昵称</th>
+                    <th>性别</th>
+                    <th>位置</th>
+                    <th>授权时间</th>
+                    <th>关注时间</th>
+                    <th>状态</th>
+                    <th>联系电话</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <!--END table-->
+
+        <!--START pagination-->
+        <div id="table-pagination" class="default-pagination"></div>
+        <!--END pagination-->
+
+        <!--START template-->
+        <script type="text/x-jquery-tmpl" id="table-tmpl">
+            <tr>
+            <td>{{= id}}</td>
+            <td>
+            <a href="{{= headimgurl}}" target="_blank" title="{{= nickname}}">
+            <img class="img-circle" src="{{= headimgurl}}" alt="{{= nickname}}" style="width:40px;height:40px;"/>
+            </a>
+            </td>
+            <td>{{= nickname}}</td>
+            <td>
+            {{if sex == 1}}
+            <span class="text-success">男</span>
+            {{else sex == 2}}
+            <span class="text-danger">女</span>
+            {{/if}}
+            </td>
+            <td>{{= country}}&nbsp;{{= province}}&nbsp;{{= city}}</td>
+            <td>
+            {{= aouth_time}}
+            </td>
+            <td>
+            {{= subscribe_time}}
+            </td>
+            <td>
+            {{if status == 0}}
+            {{if type == 1}}
+            <span class="text-danger">取消关注</span>
+            {{else type == 2}}
+            <span class="text-success">已授权/未关注</span>
+            {{/if}}
+            {{else status == 1}}
+            <span class="text-navy">已关注</span>
+            {{/if}}
+            </td>
+            <td>{{= phone}}</td>
+            </tr>
+        </script>
+        <!--END template-->
+    </div>
+
+    <!--MAIN SCRIPTS-->
+    <script src="./lib/jquery/jquery-2.1.1.js"></script>
+    <script src="./lib/bootstrap/bootstrap.min.js"></script>
+    <script src="./lib/datapicker/bootstrap-datepicker.js"></script>
+    <script src="./lib/daterangepicker/daterangepicker.js"></script>
+    <script src="./lib/jquery-pagination/jquery.pagination.js"></script>
+    <script src="./lib/jquery-tmpl/jquery.tmpl.min.js"></script>
+
+    <!--CUSTOM SCRIPTS-->
+    <script src="./index.js"></script>
+</body>
+
+</html>

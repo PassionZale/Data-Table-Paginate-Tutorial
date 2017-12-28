@@ -1,0 +1,18 @@
+div.default-pagination {
+    padding-right: 3px; padding-left: 3px; font-size: 80%; padding-bottom: 3px; margin: 10px 0; color: #5FAEE3; padding-top: 3px; text-align: center; font-size:1.4rem;
+}
+div.default-pagination a {
+    border-right: #FFF 1px solid; padding-right: 7px; background-position: 50% bottom; border-top: #FFF 1px solid; padding-left: 7px; padding-bottom: 5px; border-left: #FFF 1px solid; color: #5FAEE3; margin-right: 3px; padding-top: 5px; border-bottom: #FFF 1px solid; text-decoration: none
+}
+div.default-pagination a:hover {
+    border-right: #FFF 1px solid; border-top: #FFF 1px solid; background-image: none; border-left: #FFF 1px solid; color: #FFF; border-bottom: #FFF 1px solid; background-color: #91BBE0
+}
+div.default-pagination a:active {
+    border-right: #5FAEE3 1px solid; border-top: #5FAEE3 1px solid; background-image: none; border-left: #5FAEE3 1px solid; color: #5FAEE3; border-bottom: #5FAEE3 1px solid; background-color: #5FAEE3
+}
+div.default-pagination span.current {
+    border-right: #428BCA 1px solid; padding-right: 7px; border-top: #428BCA 1px solid; padding-left: 7px; font-weight: bold; padding-bottom: 5px; border-left: #428BCA 1px solid; color: #FFF; margin-right: 3px; padding-top: 5px; border-bottom: #428BCA 1px solid; background-color: #428BCA
+}
+div.default-pagination span.disabled {
+    border-right: #FFF 1px solid; padding-right: 7px; border-top: #FFF 1px solid; padding-left: 7px; padding-bottom: 5px; border-left: #FFF 1px solid; color: #B2D3F0; margin-right: 3px; padding-top: 5px; border-bottom: #FFF 1px solid
+}

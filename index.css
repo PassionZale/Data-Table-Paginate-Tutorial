@@ -1,0 +1,12 @@
+.container {
+    margin-top: 40px;
+    border: 1px dashed #d7d7d7;
+    padding: 20px;
+}
+#loading-bar {
+  padding: 5px;
+  margin: 20px 0;
+}
+#table-pagination {
+    display: none;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "www.lovchun.com",
+  "version": "1.0.0",
+  "description": "使用 jQuery 进行筛选+分页+渲染示例",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PassionZale/FilterPagedRenderingExp.git"
+  },
+  "keywords": [
+    "jQuery",
+    "Bootstrap",
+    "jquery-pagination",
+    "jquery-tmpl",
+    "bootstrap-datepicker"
+  ],
+  "author": "PassionZale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PassionZale/FilterPagedRenderingExp/issues"
+  },
+  "homepage": "https://github.com/PassionZale/FilterPagedRenderingExp#readme",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
